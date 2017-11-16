@@ -86,7 +86,8 @@ type GelfMessage struct {
 	Host         string  `json:"host,omitempty"`
 	ShortMessage string  `json:"short_message"`
 	FullMessage  string  `json:"message,omitempty"`
-	Timestamp    string  `json:"timestamp,omitempty"`
+    Timestamp    float64 `json:"timestamp,omitempty"`
+    //Timestamp    string  `json:"timestamp,omitempty"`
 	Level        int     `json:"level,omitempty"`
 
 	ImageId        string `json:"image_id,omitempty"`
